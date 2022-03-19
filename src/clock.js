@@ -3,12 +3,11 @@ function createClock() {
     return clock;
 }
 
-function updateClock(clock) {
+function updateClock() {
     const date = new Date();
-    clock.innerHTML = date;
     console.log(date);
 }
 
 const elmClock = createClock();
-setInterval(updateClock(elmClock), 1000);
+setInterval(updateClock, 1000);
 document.body.appendChild(elmClock);
