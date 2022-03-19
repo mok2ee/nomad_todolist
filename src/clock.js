@@ -6,6 +6,7 @@ function createClock() {
 function updateClock(clock) {
     const date = new Date();
     clock.innerHTML = date;
+    console.log(date);
 }
 
 const elmClock = createClock();
