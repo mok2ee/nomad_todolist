@@ -1,15 +1,13 @@
-let elmClock;
-
 function createClock() {
-    elmClock = document.createElement("span");
+    clock = document.createElement("span");
+    return clock;
 }
 
-function updateClock() {
+function updateClock(clock) {
     const date = new Date();
-    elmClock.innerHTML = date;
+    clock.innerHTML = date;
 }
 
-createClock();
-setInterval(updateClock, 1000);
-
+const elmClock = createClock();
+setInterval(updateClock(elmClock), 1000);
 document.body.appendChild(elmClock);
