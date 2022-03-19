@@ -1,5 +1,7 @@
+let elmClock;
+
 function createClock() {
-    const elmClock = document.createElement("span");
+    elmClock = document.createElement("span");
 }
 
 function updateClock(clock) {
@@ -8,6 +10,6 @@ function updateClock(clock) {
 }
 
 createClock();
-setInterval(updateClock, 1000);
+setInterval(updateClock(elmClock), 1000);
 
 document.body.appendChild(elmClock);
