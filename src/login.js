@@ -32,6 +32,7 @@ function showLoginSpan() {
     setLoginSpan();
     login.form.classList.add(HIDDEN_CLASSNAME);
     login.span.classList.remove(HIDDEN_CLASSNAME);
+    showTodolistDiv();
 }
 
 

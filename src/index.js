@@ -1,6 +1,7 @@
 createClock();
 createLogin();
 createTodolist();
+createGeo();
 
 checkLogin() ? showLoginSpan() : showLoginForm();
 

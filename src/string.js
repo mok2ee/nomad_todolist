@@ -1,8 +1,8 @@
 const CLOCK_CLASSNAME           = "js-clock";
 const LOGIN_CLASSNAME           = "js-login";
 const TODOLIST_CLASSNAME        = "js-todolist";
-const BACKGROUND_CLASSNAME      = "js-background";
-const GEOLOCATION_CLASSNAME     = "js-background";
+const BG_CLASSNAME              = "js-bg";
+const GEO_CLASSNAME             = "js-geo";
 
 const HIDDEN_CLASSNAME          = "hidden";
 
