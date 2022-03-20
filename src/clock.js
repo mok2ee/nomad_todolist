@@ -9,7 +9,7 @@ function updateClock() {
 }
 
 const elmClock = createClock();
-elmClock.innerHTML = "test";
 
 setInterval(updateClock, 1000);
 document.body.appendChild(elmClock);
+elmClock.innerHTML = "test";
