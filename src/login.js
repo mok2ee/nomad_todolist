@@ -15,6 +15,7 @@ function createLogin() {
     login.span.classList.add(HIDDEN_CLASSNAME);
     login.form.classList.add(HIDDEN_CLASSNAME);
     login.input.type = "text";
+    login.input.placeholder = "당신의 이름은 무엇입니까?";
 
     login.form.addEventListener("submit", submitLogin);
 }

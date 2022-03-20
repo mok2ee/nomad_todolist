@@ -26,7 +26,7 @@ function checkTodolist() {
 function showTodolistDiv() {
     todolist.div.classList.remove(HIDDEN_CLASSNAME);
     if(checkTodolist()){
-        JSON.parse(localStorage.getItem(TODOLIST_KEY)).forEach((val) => makeTodolistLi(val.txt));
+        JSON.parse(localStorage.getItem(TODOLIST_KEY)).forEach(val => makeTodolistLi(val.txt));
     }
 }
 
@@ -59,7 +59,7 @@ function deleteTodolistLi(e){
     const id = li.id;
 
     li.remove();
-    todolist.list = todolist.list.filter((val) => val.id !== parseInt(id));
+    todolist.list = todolist.list.filter(val => val.id !== parseInt(id));
     localStorage.setItem(TODOLIST_KEY, JSON.stringify(todolist.list));
 }
 

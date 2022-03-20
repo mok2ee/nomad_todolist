@@ -8,3 +8,5 @@ const HIDDEN_CLASSNAME          = "hidden";
 
 const USERNAME_KEY              = "username";
 const TODOLIST_KEY              = "todolist";
+
+const API_KEY                   = "ef7aedde180ce0a45d1c3e7ae0cee2b2";

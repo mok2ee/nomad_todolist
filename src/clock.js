@@ -8,6 +8,8 @@ function createClock() {
     document.body.appendChild(clock.div);
     
     clock.div.classList.add(CLOCK_CLASSNAME);
+    
+    updateClock();
 }
 
 function updateClock() {

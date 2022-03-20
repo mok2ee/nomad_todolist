@@ -2,8 +2,8 @@ createClock();
 createLogin();
 createTodolist();
 createGeo();
+createBg();
 
 checkLogin() ? showLoginSpan() : showLoginForm();
 
-updateClock();
 setInterval(updateClock,1000);
