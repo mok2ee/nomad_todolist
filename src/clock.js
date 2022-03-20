@@ -1,15 +1,20 @@
+const clock = {};
+
 function createClock() {
-    clock = document.createElement("span");
-    return clock;
+    clock.div = document.createElement("div");
+    clock.span = document.createElement("span");
+
+    clock.div.appendChild(clock.span);
+    document.body.appendChild(clock.div);
+    
+    clock.div.classList.add(CLOCK_CLASSNAME);
 }
 
 function updateClock() {
     const date = new Date();
-    console.log(date);
+    const hour = String(date.getHours()).padStart(2,"0");
+    const min = String(date.getMinutes()).padStart(2,"0");
+    const sec = String(date.getSeconds()).padStart(2,"0");
+
+    clock.span.innerHTML = `${hour}:${min}:${(sec)}`;
 }
-
-const elmClock = createClock();
-
-setInterval(updateClock, 1000);
-document.body.appendChild(elmClock);
-elmClock.innerHTML = "test";
